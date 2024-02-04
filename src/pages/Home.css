@@ -1,0 +1,27 @@
+.home {
+  padding: 20px 100px;
+  margin-bottom: 20px;
+}
+
+.home__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+}
+
+.home__banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.home__homes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #f6f6f6;
+  padding: 50px;
+  border-radius: 20px;
+}

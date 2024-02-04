@@ -1,0 +1,23 @@
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 100px;
+  height: 100px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+header nav ul a {
+  color: #000;
+}
+
+.active {
+  text-decoration: underline;
+}

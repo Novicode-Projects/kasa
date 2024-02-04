@@ -1,0 +1,27 @@
+.notFound div {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.notFound h1 {
+  color: #ff6060;
+  font-size: 200px;
+}
+
+.notFound p {
+  color: #ff6060;
+  font-size: 36px;
+}
+
+.notFound a {
+  color: black;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.notFound a:hover {
+  text-decoration: none;
+}
