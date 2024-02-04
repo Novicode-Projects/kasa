@@ -1,0 +1,26 @@
+.aboutDropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutDropdown__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34px;
+  background-color: #ff6060;
+  color: white;
+  gap: 70px;
+  padding: 20px;
+}
+
+.aboutDropdown__title button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.aboutDropdown__content {
+  background: #f6f6f673;
+  padding: 20px;
+}

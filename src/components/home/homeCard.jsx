@@ -9,6 +9,7 @@ export const HomeCard = ({ title, background }) => {
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${background})`,
         }}
+        className="homeCard"
       >
         <h3>{title}</h3>
       </article>
