@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import "./Dropdown.scss";
 
-export const Dropdown = ({ title, content }) => {
+export const Dropdown = ({ title, content, isList }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const contentRender = isList ? (
+    <ul>
+      {content.map((list, index) => (
+        <li key={index}>{list}</li>
+      ))}
+    </ul>
+  ) : (
+    <p>{content}</p>
+  );
 
   return (
     <article className="aboutDropdown">
@@ -17,7 +27,9 @@ export const Dropdown = ({ title, content }) => {
         </button>
       </div>
 
-      {isOpen ? <div className="aboutDropdown__content">{content}</div> : null}
+      {isOpen ? (
+        <div className="aboutDropdown__content">{contentRender}</div>
+      ) : null}
     </article>
   );
 };

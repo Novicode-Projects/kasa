@@ -1,6 +1,7 @@
 import React from "react";
-import { Dropdown } from "../components/about/Dropdown";
+
 import "./About.scss";
+import { Dropdown } from "../components/Dropdown";
 
 export const About = () => {
   return (
