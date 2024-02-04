@@ -8,6 +8,10 @@
   justify-content: center;
   align-items: center;
   height: 223px;
+  color: white;
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../public/banner.png");
 }
 
 .home__banner h1 {
@@ -16,6 +20,7 @@
 }
 
 .home__homes {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

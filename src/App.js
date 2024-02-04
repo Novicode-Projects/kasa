@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -14,17 +14,16 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        {/* Le composant Routes englobe tous vos chemins (Route) */}
+
         <Routes>
-          {/* Définissez un chemin et le composant à rendre pour ce chemin */}
           <Route path="/" element={<Home />} />
           <Route path="/a-propos" element={<About />} />
 
-          {/* Ajoutez autant de chemins que nécessaire */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

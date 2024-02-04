@@ -8,6 +8,12 @@ header nav {
   height: 100px;
 }
 
+header nav img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
 header nav ul {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,22 @@
+footer {
+  background-color: #000000;
+  color: white;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  height: 209px;
+}
+
+footer > div div:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  object-fit: contain;
+}
