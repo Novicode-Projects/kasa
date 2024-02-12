@@ -6,8 +6,14 @@
   height: 223px;
   width: 100%;
   border-radius: 20px;
-  background-image: url("../../public/about-banner.png");
-  object-fit: contain;
+  //background-image: url("../../public/about-banner.png");
+}
+
+.about__banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .about__dropdown {
@@ -15,4 +21,14 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding: 20px 20px;
+  }
+
+  .about__dropdown {
+    padding: 50px 0px;
+  }
 }

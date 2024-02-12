@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.scss";
 
+import logo from "../image/logo-kasa.png";
+
 export const Header = () => {
   const { pathname } = useLocation();
 
@@ -10,7 +12,7 @@ export const Header = () => {
       <nav>
         <div>
           <Link to="/">
-            <img src="logo-kasa.png" alt="Logo Kasa" />
+            <img src={logo} alt="Logo Kasa" />
           </Link>
         </div>
         <ul>

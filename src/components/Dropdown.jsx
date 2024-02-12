@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Dropdown.scss";
 
+import arrowDown from "../image/arrow-down.png";
+import arrowBack from "../image/arrow-back.png";
+
 export const Dropdown = ({ title, content, isList }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,10 +23,7 @@ export const Dropdown = ({ title, content, isList }) => {
         <h3>{title}</h3>
 
         <button onClick={() => setIsOpen((currentIsOpen) => !currentIsOpen)}>
-          <img
-            src={isOpen ? "arrow-down.png" : "arrow-back.png"}
-            alt="Flèche du haut"
-          />
+          <img src={isOpen ? arrowDown : arrowBack} alt="Flèche du haut" />
         </button>
       </div>
 

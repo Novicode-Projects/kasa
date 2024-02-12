@@ -1,5 +1,76 @@
-.housing__dropdown {
+.housing {
+  margin: 20px 100px;
+}
+
+.housing__informationTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  height: 200px;
+}
+
+.housing__informationH1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.housing__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.housing__picture p {
+  text-align: end;
+}
+
+.housing__informationTop img {
+  border-radius: 100%;
+  font-size: 18px;
+}
+
+.housing h1 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #ff6060;
+  font-weight: 800;
+}
+
+.housing__informationH1 p {
+  margin-top: 10px;
+}
+
+.housing__informationTags {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.housing__tag {
+  background-color: #ff6060;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 20px;
+}
+
+.housing__dropdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.housing__star {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

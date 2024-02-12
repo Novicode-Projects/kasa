@@ -16,13 +16,22 @@ export const Gallery = ({ images }) => {
     );
   };
 
-  return (
-    <div className="gallery">
-      <img src={images[imageIndex]} alt={`n°${imageIndex}`} />
+  //  <img src={images[imageIndex]} alt={`n°${imageIndex}`} />
 
+  return (
+    <div
+      className="gallery"
+      style={{
+        backgroundImage: `url(${images[imageIndex]})`,
+      }}
+    >
       <div className="gallery__buttons">
-        <button onClick={() => showPrevImage()}>ok</button>
-        <button onClick={() => showNextImage()}>ok</button>
+        <button onClick={() => showPrevImage()}>
+          <img src="../arrow-left.png" alt="arrow left" />
+        </button>
+        <button onClick={() => showNextImage()}>
+          <img src="../arrow-right.png" alt="arrow right" />
+        </button>
       </div>
     </div>
   );

@@ -20,3 +20,16 @@ footer > div div:first-child {
 footer img {
   object-fit: contain;
 }
+
+footer p {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  footer img {
+  }
+
+  footer p {
+    flex-direction: column;
+  }
+}

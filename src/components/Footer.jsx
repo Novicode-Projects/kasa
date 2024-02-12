@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 
+import logo from "../image/logo-kasa-footer.png";
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -8,9 +10,11 @@ export const Footer = () => {
     <footer>
       <div>
         <div>
-          <img src="logo-kasa-footer.png" alt="Logo Kasa" />
+          <img src={logo} alt="Logo Kasa" />
         </div>
-        <p>© {currentYear} Kasa. All rights reserved</p>
+        <p>
+          © {currentYear} Kasa. All <span>rights reserved</span>
+        </p>
       </div>
     </footer>
   );

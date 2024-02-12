@@ -27,3 +27,9 @@ header nav ul a {
 .active {
   text-decoration: underline;
 }
+
+@media (max-width: 900px) {
+  header nav {
+    padding: 20px 20px;
+  }
+}
