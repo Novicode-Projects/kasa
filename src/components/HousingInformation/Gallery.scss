@@ -31,3 +31,10 @@
   object-fit: contain;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  .gallery__buttons button img {
+    height: 50px;
+    width: 50px;
+  }
+}

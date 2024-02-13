@@ -34,8 +34,6 @@ export const HousingInformation = () => {
     );
   };
 
-  console.log(housing);
-
   return (
     <main className="housing">
       <section className="housing__gallery">
@@ -56,7 +54,7 @@ export const HousingInformation = () => {
             </div>
           </div>
 
-          <div>
+          <div className="housing__pictureAndStar">
             <div className="housing__picture">
               <p>
                 {firstName}
@@ -66,7 +64,7 @@ export const HousingInformation = () => {
               <img src={housing.host.picture} alt={housing.host.name} />
             </div>
             <div className="housing__star">
-              <p>{dynamicRating()}</p>
+              <div>{dynamicRating()}</div>
             </div>
           </div>
         </div>

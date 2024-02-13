@@ -36,11 +36,17 @@
     padding: 20px 20px;
   }
 
+  .home__banner {
+    height: 150px;
+    padding: 30px;
+  }
+
   .home__banner h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .home__homes {
     background-color: transparent;
+    margin-top: 0px;
   }
 }
