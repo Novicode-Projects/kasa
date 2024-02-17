@@ -7,6 +7,7 @@ import { NotFound } from "./NotFound";
 import { Gallery } from "../components/HousingInformation/Gallery";
 import { Dropdown } from "../components/Dropdown";
 import "./HousingInformation.scss";
+import { Rating } from "../components/HousingInformation/Rating";
 
 export const HousingInformation = () => {
   const { id } = useParams();
@@ -17,22 +18,6 @@ export const HousingInformation = () => {
   }
 
   const [firstName, lastName] = housing.host.name.split(" ");
-
-  const dynamicRating = () => {
-    return (
-      <div>
-        {Array.from({ length: 5 }, (_, index) => {
-          const star = index + 1;
-          const starImage =
-            star <= housing.rating
-              ? "../star-active.png"
-              : "../star-inactive.png";
-
-          return <img key={star} alt={`star-${star}`} src={starImage} />;
-        })}
-      </div>
-    );
-  };
 
   return (
     <main className="housing">
@@ -64,7 +49,9 @@ export const HousingInformation = () => {
               <img src={housing.host.picture} alt={housing.host.name} />
             </div>
             <div className="housing__star">
-              <div>{dynamicRating()}</div>
+              <div>
+                <Rating housing={housing} />
+              </div>
             </div>
           </div>
         </div>
